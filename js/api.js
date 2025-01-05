@@ -4,7 +4,8 @@
 "use strict";
 
 async function loadQuestions() {
-  const url = "https://opentdb.com/api.php?amount=2&category=18&difficulty=medium";
+  // Se cargarán 10 preguntas de la categoria computer-science
+  const url = "https://opentdb.com/api.php?amount=10&category=18&difficulty=medium";
 
   try {
     const res = await fetch(url);
